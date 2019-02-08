@@ -1,0 +1,17 @@
+<form (ngSubmit)="onSubmit.emit(this.form)" [formGroup]="form" class="form-horizontal">
+    <div class="form-body">
+        <div *ngFor="let section of dynamicFormSchema.form">
+            <div class="section-header">
+                <div class="section-title">{{section.title}}</div>
+            </div>
+            <div class="section-body">
+                <div *ngFor="let field of section.items">
+                    <field-builder [field]="field" [form]="form"></field-builder>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-footer">
+        <button type="submit" [disabled]="!form.valid" class="btn-submit">Save</button>
+    </div>
+</form>

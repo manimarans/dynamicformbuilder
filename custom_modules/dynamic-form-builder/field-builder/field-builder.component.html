@@ -1,0 +1,11 @@
+<div class="form-group" [formGroup]="form">
+    <div class="mandatory-indicator" *ngIf="field.required"></div>
+    <label class="form-control-label" [attr.for]="field.title">{{field.title}}</label>
+
+    <div class="form-control-field" [ngSwitch]="field.type">
+        <textbox *ngSwitchCase="'input'" [field]="field" [form]="form"></textbox>
+        <radio *ngSwitchCase="'radio'" [field]="field" [form]="form"></radio>
+        <multi-select *ngSwitchCase="'multi_select'" [field]="field" [form]="form"></multi-select>
+    </div>
+    <div class="invalid" *ngIf="!isValid && isDirty">{{field.title}} is required</div>
+</div>

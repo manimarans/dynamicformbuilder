@@ -1,0 +1,43 @@
+
+.form-group{
+    display: flex;
+    height: 33px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.form-control-label{
+    width: 25%;
+    color: #666;
+    line-height: 0px;
+    font-size: .825rem;
+    margin-top: 22px;
+}
+
+.mandatory-indicator{
+    width: 25px;
+    height: 2px;
+    background: #f27b77;
+    position: absolute;
+    margin-top: 31px;
+}
+
+.form-control-field{
+    color: #666;
+    /* line-height: 24px; */
+}
+
+.form-control-field{
+    display: flex;
+}
+
+.invalid{
+    color: red;
+    width: 200px;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-top: 35px;
+    position: absolute;
+    text-align: right;
+    right: 0;
+}

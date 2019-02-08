@@ -1,0 +1,23 @@
+:host{
+    display: block;
+    width: 100%;
+}
+
+input{
+    display: block;
+    background-color: transparent;
+    line-height: 0px;
+    padding-top: 16px;
+    border: none;
+    width: 100%;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+input.required{
+    border-bottom: 1px solid red;
+}
+
+input:focus{
+    outline: none;
+}

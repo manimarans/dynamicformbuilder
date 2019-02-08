@@ -1,0 +1,103 @@
+{
+  "schemaDetails": {
+    "type": "object",
+    "properties": {
+      "input": {
+        "type": "string"
+      },
+      "radio": {
+        "type": "string"
+      },
+      "multi_select": {
+        "type": []
+      }
+    }
+  },
+  "form": [
+    {
+      "type": "section",
+      "title": "User Information",
+      "class": "accordian",
+      "expandable": true,
+      "expanded": true,
+      "visible": true,
+      "items": [
+        {
+          "field_type": "input",
+          "field_ref": "username",
+          "label_class": "default",
+          "title": "Username",
+          "field_class": "default",
+          "type": "input",
+          "default_value": "",
+          "placeholder": "Enter username here",
+          "required": true
+        },
+        {
+          "field_type": "input",
+          "field_ref": "firstname",
+          "label_class": "default",
+          "title": "First Name",
+          "field_class": "default",
+          "type": "input",
+          "default_value": "",
+          "placeholder": "Enter Firstname here",
+          "required": true
+        },
+        {
+          "field_type": "input",
+          "field_ref": "lastname",
+          "label_class": "default",
+          "title": "Last Name",
+          "field_class": "default",
+          "type": "input",
+          "default_value": "",
+          "placeholder": "Enter Lastname here",
+          "required": true
+        },
+        {
+          "field_type": "radio",
+          "field_ref": "gender",
+          "label_class": "default",
+          "title": "Gender",
+          "field_class": "default",
+          "type": "radio",
+          "default_value": "",
+          "options": [
+            {
+              "title": "Male",
+              "value": "male"
+            },
+            {
+              "title": "Female",
+              "value": "female"
+            }
+          ],
+          "required": true
+        },
+        {
+          "field_type":"multi_select",
+          "field_ref":"country",
+          "label_class":"default",
+          "title":"Country",
+          "field_class":"default",
+          "type":"multi_select",
+          "default_value":[0],
+          "options": [
+           {"id":0, "value":"Spain", "name":"spain"},
+           {"id":1, "value":"India", "name":"india"},
+           {"id":2, "value":"USA", "name":"usa"}
+          ],
+          "required": true
+          }
+      ]
+    }
+  ],
+  "data": {
+    "username": "csrahulram",
+    "firstname": "Rahul",
+    "lastname": "Ram",
+    "gender": "male",
+    "country":[0]
+  }
+}

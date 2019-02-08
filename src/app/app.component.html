@@ -1,0 +1,9 @@
+
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header"><h2>Dynamic Forms</h2></div>
+    <div class="card-body">
+      <dynamic-form-builder [jsonSchema]="this.appService.getFormSchema()" (onSubmit)="saveValue($event)"></dynamic-form-builder>
+    </div>
+  </div>
+</div>

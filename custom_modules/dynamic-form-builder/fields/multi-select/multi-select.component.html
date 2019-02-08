@@ -1,0 +1,65 @@
+<div class="field-container" [formGroup]="form">
+    <div class="selected-options-container">
+        <div class="selected-option selOpts" *ngFor="let selected of selectedOptions">{{selected.value}}
+            <span class="del" (click)="removeItem(selected)">X</span>
+        </div>
+    </div>
+  
+    <input [attr.type]="input" [ngClass]="{'required':!isValid && isDirty}" (keyup)="searchOptions($event)" 
+    (focus)="showOptions()"/>
+    
+   
+            <div class="options-container optsDrop" *ngIf="toggleOptions">
+                    <div class="option" *ngFor="let option of field.options">
+                        <span style="display:flex;">
+                            <input type="checkbox" [checked]="isSelected(option)" (click)="onOptionClick($event, option)" style="width:30px; margin-top: 4px;"
+                            [id]="field.field_ref" [value]="" [name]="field.field_ref" />{{option.value}}
+                        </span>
+                    </div>             
+            </div>
+     
+
+    <!-- <div class="options-container optsDrop" *ngIf="toggleOptions">
+        <div class="option" *ngFor="let option of field.options">
+            <span style="display:flex;">
+                <input type="checkbox" [checked]="isSelected(option)" (click)="onOptionClick($event, option)" style="width:30px; margin-top: 4px;"
+                    [id]="field.field_ref" [value]="" [name]="field.field_ref" />{{option.value}}
+            </span>
+        </div>
+    </div> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="field-container" [formGroup]="form">
+
+    <div class="selected-options-container">
+        <div class="selected-option selOpts" *ngFor="let selected of arr">{{selected.value}}
+            <span class="del" (click)="removeSelected(selected)">X</span></div>
+    </div>
+
+
+    <input [attr.type]="input" [ngClass]="{'required':!isValid && isDirty}" [id]="field.field_ref" [name]="field.field_ref"
+        [formControlName]="field.field_ref" (focus)="showOptions()" />
+
+    <div class="options-container optsDrop" *ngIf="toggleOptions">
+        <div class="option" *ngFor="let option of field.options" (click)="addSelected(option)">{{option.value}}</div>
+    </div>
+
+</div> -->
