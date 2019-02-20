@@ -14,6 +14,7 @@ fomrGrp : FormGroup = new FormGroup({});
   constructor() { 
     this.fomrGrp.addControl('Framework',new FormControl('', Validators.required));
     this.fomrGrp.addControl('Proficiency',new FormControl('', Validators.required));
+    
   }
   onchangeInput(selected : any){
       console.log(selected);
@@ -23,7 +24,7 @@ fomrGrp : FormGroup = new FormGroup({});
       }
   }
   ngOnInit() {
-
+    this.fomrGrp.setValue(this.field.value);
   }
  
 

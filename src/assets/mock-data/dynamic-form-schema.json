@@ -112,7 +112,7 @@
     "firstname": "Rahul",
     "lastname": "Ram",
     "gender": "male",
-    "country":[0],
-    "twodropdown":""
+    "country":[1],
+    "twodropdown":{"Framework": "React", "Proficiency": "Master"}
   }
 }
