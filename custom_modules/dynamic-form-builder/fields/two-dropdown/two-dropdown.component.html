@@ -1,0 +1,14 @@
+<div class="field-container" [formGroup]="fomrGrp">
+  <label>Framework : </label>
+    <select formControlName="Framework" (change)="onchangeInput($event.target.value)">
+        <option *ngFor="let list of listsA" value={{list}}>
+            {{list}}
+        </option>
+    </select>
+    <label> Proficiency : </label>
+    <select formControlName="Proficiency" (change)="onchangeInput($event.target.value)">
+        <option *ngFor="let list of listsB" value={{list}}>
+          {{list}}
+      </option>
+    </select>
+</div>

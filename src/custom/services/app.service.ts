@@ -12,7 +12,7 @@ export class AppService {
   }
 
   public getFormSchema(): Observable<any> {
-    return this.http.get("./custom/mock-data/dynamic-form-schema.json");
+    return this.http.get("./assets/mock-data/dynamic-form-schema.json");
   }
 
 }

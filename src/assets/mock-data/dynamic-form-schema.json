@@ -10,6 +10,9 @@
       },
       "multi_select": {
         "type": []
+      },
+      "two_dropdown": {
+        "type": "string"
       }
     }
   },
@@ -89,7 +92,18 @@
            {"id":2, "value":"USA", "name":"usa"}
           ],
           "required": true
-          }
+          },
+          {
+            "field_type":"two_dropdown",
+            "field_ref":"twodropdown",
+            "label_class":"default",
+            "title":"twodropdown",
+            "field_class":"default",
+            "type":"two_dropdown",
+            "default_value": "",
+            "placeholder": "",
+            "required": true
+            }
       ]
     }
   ],
@@ -98,6 +112,7 @@
     "firstname": "Rahul",
     "lastname": "Ram",
     "gender": "male",
-    "country":[0]
+    "country":[0],
+    "twodropdown":""
   }
 }

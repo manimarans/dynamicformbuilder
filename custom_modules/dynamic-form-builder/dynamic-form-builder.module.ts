@@ -8,6 +8,7 @@ import { FieldBuilderComponent } from './field-builder/field-builder.component';
 import { TextBoxComponent } from './fields/textbox/textbox.component';
 import { RadioComponent } from './fields/radio/radio.component';
 import { MultiSelectComponent } from './fields/multi-select/multi-select.component';
+import { TwoDropdownComponent } from './fields/two-dropdown/two-dropdown.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { MultiSelectComponent } from './fields/multi-select/multi-select.compone
     FieldBuilderComponent,
     TextBoxComponent,
     RadioComponent,
-    MultiSelectComponent
+    MultiSelectComponent,
+    TwoDropdownComponent
 
   ],
   exports: [DynamicFormBuilderComponent],
